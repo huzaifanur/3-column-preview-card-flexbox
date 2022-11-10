@@ -59,16 +59,22 @@ a {
   border-radius: 100vmax;
   display: inline-block;
   margin-top: 1.5rem;
+  border: 2px solid transparent;
 }
-
 .bg-primary-200 a {
   color: var(--clr-primary-200);
 }
+
 .bg-primary-400 a {
   color: var(--clr-primary-400);
 }
 .bg-primary-600 a {
   color: var(--clr-primary-600);
+}
+a:hover {
+  border: 2px solid var(--clr-neutral-200);
+  background-color: inherit;
+  color: var(--clr-neutral-200);
 }
 
 @media (min-width: 52.5em) {
